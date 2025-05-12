@@ -1,0 +1,17 @@
+@use 'function' as b;
+
+.footer {
+    font-size: b.rem(10);
+    text-align: center;
+    margin-bottom: b.rem(10);
+
+    @include breakpoint("medium") {
+        font-size: b.rem(13);
+    }
+
+    @include breakpoint("large") {
+        font-size: b.rem(14);
+        margin-top: b.rem(-40);
+        margin-bottom: b.rem(20);
+    }
+}

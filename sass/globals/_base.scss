@@ -1,0 +1,27 @@
+@use 'function' as m;
+@import 'variable';
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $rose-50;
+    font-family: $font-family;
+    color: $rose-900;
+    overflow-x: hidden;
+}
+
+.card__picture, img{
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+

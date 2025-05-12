@@ -1,0 +1,122 @@
+@use 'function' as v;
+
+.confirmation {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+
+  @include breakpoint("medium") {
+    align-items: center;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__container {
+    position: relative;
+    background: $white;
+    border-top-left-radius: v.rem(15);
+    border-top-right-radius: v.rem(15);
+    padding: v.rem(40) v.rem(25) v.rem(25);
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    z-index: 101;
+
+    @include breakpoint("medium") {
+      width: v.rem(592);
+      height: 80%;
+      border-radius: v.rem(15);
+      padding: v.rem(40);  
+      padding-bottom: v.rem(25);  
+    }
+
+    @include breakpoint("large") {
+      border-radius: v.rem(15);
+      padding: v.rem(40);
+    }
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: v.rem(25);
+  }
+
+  &__title {
+    font-size: v.rem(43);
+    margin-top: v.rem(18);
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-size: v.rem(16);
+    color: $rose-500;
+    margin-top: v.rem(5);
+  }
+
+  &__list-wrapper {
+    margin-block: v.rem(30);
+    padding: v.rem(24);
+    background-color: $rose-50;
+    border-radius: v.rem(10);
+  }
+
+  &__list {
+    list-style: none;
+    overflow-y: auto;
+  }
+
+  &__list img {
+    width: v.rem(50);
+    height: v.rem(50);
+    object-fit: cover;
+    border-radius: v.rem(5);
+    flex-shrink: 0;
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: v.rem(1) solid $rose-100;
+  }
+
+    &__button {
+      margin-inline: auto;
+      display: block;
+    }
+}
+
+.item__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: v.rem(16);
+  margin-block: v.rem(18);
+}
+
+.list__name {
+  font-weight: 600;
+  font-size: v.rem(14);
+}
+
+.item__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__left {
+  display: flex;
+  gap: v.rem(8);
+}
+
+.list__total {
+  color: $rose-900 !important;
+}

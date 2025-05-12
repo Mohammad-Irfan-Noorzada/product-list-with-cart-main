@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/style.css">
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+<body>
+
+  <main class="main">
+    <h1 class="main__title">Desserts</h1>
+    <div class="main__container">
+
+      <div class="card">
+        <div class="card__item">
+          <picture class="card__picture">
+            <source media="(min-width:1100px)" srcset="assets/images/image-waffle-desktop.jpg">
+            <source media="(min-width:700px)" srcset="assets/images/image-waffle-tablet.jpg">
+            <img src="assets/images/image-waffle-mobile.jpg" alt="">
+          </picture>
+          <button class="card__button">
+            Add to Cart
+            <div class="card__icons">
+              <img class="card__minus-icon card__icon" src="assets/images/icon-decrement-quantity.svg" alt="minus icon">
+              <span class="card__count">1</span>
+              <img class="card__plus-icon card__icon" src="assets/images/icon-increment-quantity.svg" alt="plus icon">
+            </div>
+          </button>
+          <p class="card__subtitle">Waffle</p>
+          <p class="card__title">Waffle with Berries</p>
+          <p class="card__price">$6.50</p>
+        </div>
+
+        <div class="card__item">
+          <picture class="card__picture">
+            <source media="(min-width:1100px)" srcset="assets/images/image-creme-brulee-desktop.jpg">
+            <source media="(min-width:700px)" srcset="assets/images/image-creme-brulee-tablet.jpg">
+            <img src="assets/images/image-creme-brulee-mobile.jpg" alt="">
+          </picture>
+          <button class="card__button">
+            Add to Cart
+            <div class="card__icons">
+              <img class="card__minus-icon card__icon" src="assets/images/icon-decrement-quantity.svg" alt="minus icon">
+              <span class="card__count">1</span>
+              <img class="card__plus-icon card__icon" src="assets/images/icon-increment-quantity.svg" alt="plus icon">
+            </div>
+          </button>
+          <p class="card__subtitle">Crème Brûlée</p>
+          <p class="card__title">Vanilla Bean Crème Brûlée</p>
+          <p class="card__price">$7.00</p>
+        </div>
+  
+        <div class="card__item">
+          <picture class="card__picture">
+            <source media="(min-width:1100px)" srcset="assets/images/image-macaron-desktop.jpg">
+            <source media="(min-width:700px)" srcset="assets/images/image-macaron-tablet.jpg">
+            <img src="assets/images/image-macaron-mobile.jpg" alt="">
+          </picture>
+          <button class="card__button">
+            Add to Cart
+            <div class="card__icons">
+              <img class="card__minus-icon card__icon" src="assets/images/icon-decrement-quantity.svg" alt="minus icon">
+              <span class="card__count">1</span>
+              <img class="card__plus-icon card__icon" src="assets/images/icon-increment-quantity.svg" alt="plus icon">
+            </div>
+          </button>
+          <p class="card__subtitle">Macaron</p>
+          <p class="card__title">Macaron Mix of Five</p>
+          <p class="card__price">$8.00</p>
+        </div>
+
+        <div class="card__item">
+          <picture class="card__picture">
+            <source media="(min-width:1100px)" srcset="assets/images/image-tiramisu-desktop.jpg">
+            <source media="(min-width:700px)" srcset="assets/images/image-tiramisu-tablet.jpg">
+            <img src="assets/images/image-tiramisu-mobile.jpg" alt="">
+          </picture>
+          <button class="card__button">
+            Add to Cart
+            <div class="card__icons">
+              <img class="card__minus-icon card__icon" src="assets/images/icon-decrement-quantity.svg" alt="minus icon">
+              <span class="card__count">1</span>
+              <img class="card__plus-icon card__icon" src="assets/images/icon-increment-quantity.svg" alt="plus icon">
+            </div>
+          </button>
+          <p class="card__subtitle">Tiramisu</p>
+          <p class="card__title">WaClassic Tiramisu</p>
+          <p class="card__price">$5.50</p>
+        </div>
+
+        <div class="card__item">
+          <picture class="card__picture">
+            <source media="(min-width:1100px)" srcset="assets/images/image-baklava-desktop.jpg">
+            <source media="(min-width:700px)" srcset="assets/images/image-baklava-tablet.jpg">
+            <img src="assets/images/image-baklava-mobile.jpg" alt="">
+          </picture>
+          <button class="card__button">
+            Add to Cart
+            <div class="card__icons">
+              <img class="card__minus-icon card__icon" src="assets/images/icon-decrement-quantity.svg" alt="minus icon">
+              <span class="card__count">1</span>
+              <img class="card__plus-icon card__icon" src="assets/images/icon-increment-quantity.svg" alt="plus icon">
+            </div>
+          </button>
+          <p class="card__subtitle">Baklava</p>
+          <p class="card__title">Pistachio Baklava</p>
+          <p class="card__price">$4.00</p>
+        </div>
+
+        <div class="card__item">
+          <picture class="card__picture">
+            <source media="(min-width:1100px)" srcset="assets/images/image-meringue-desktop.jpg">
+            <source media="(min-width:700px)" srcset="assets/images/image-meringue-tablet.jpg">
+            <img src="assets/images/image-meringue-mobile.jpg" alt="">
+          </picture>
+          <button class="card__button">
+            Add to Cart
+            <div class="card__icons">
+              <img class="card__minus-icon card__icon" src="assets/images/icon-decrement-quantity.svg" alt="minus icon">
+              <span class="card__count">1</span>
+              <img class="card__plus-icon card__icon" src="assets/images/icon-increment-quantity.svg" alt="plus icon">
+            </div>
+          </button>
+          <p class="card__subtitle">Pie</p>
+          <p class="card__title">Lemon Meringue Pie</p>
+          <p class="card__price">$5.00</p>
+        </div>
+
+        <div class="card__item">
+          <picture class="card__picture">
+            <source media="(min-width:1100px)" srcset="assets/images/image-cake-desktop.jpg">
+            <source media="(min-width:700px)" srcset="assets/images/image-cake-tablet.jpg">
+            <img src="assets/images/image-cake-mobile.jpg" alt="">
+          </picture>
+          <button class="card__button">
+            Add to Cart
+            <div class="card__icons">
+              <img class="card__minus-icon card__icon" src="assets/images/icon-decrement-quantity.svg" alt="minus icon">
+              <span class="card__count">1</span>
+              <img class="card__plus-icon card__icon" src="assets/images/icon-increment-quantity.svg" alt="plus icon">
+            </div>
+          </button>
+          <p class="card__subtitle">Cake</p>
+          <p class="card__title">Red Velvet Cake</p>
+          <p class="card__price">$4.50</p>
+        </div>
+
+        <div class="card__item">
+          <picture class="card__picture">
+            <source media="(min-width:1100px)" srcset="assets/images/image-brownie-desktop.jpg">
+            <source media="(min-width:700px)" srcset="assets/images/image-brownie-tablet.jpg">
+            <img src="assets/images/image-brownie-mobile.jpg" alt="">
+          </picture>
+          <button class="card__button">
+            Add to Cart
+            <div class="card__icons">
+              <img class="card__minus-icon card__icon" src="assets/images/icon-decrement-quantity.svg" alt="minus icon">
+              <span class="card__count">1</span>
+              <img class="card__plus-icon card__icon" src="assets/images/icon-increment-quantity.svg" alt="plus icon">
+            </div>
+          </button>
+          <p class="card__subtitle">Brownie</p>
+          <p class="card__title">Salted Caramel Brownie</p>
+          <p class="card__price">$4.50</p>
+        </div>
+
+        <div class="card__item">
+          <picture class="card__picture">
+            <source media="(min-width:1100px)" srcset="assets/images/image-panna-cotta-desktop.jpg">
+            <source media="(min-width:700px)" srcset="assets/images/image-panna-cotta-tablet.jpg">
+            <img src="assets/images/image-panna-cotta-mobile.jpg" alt="">
+          </picture>
+          <button class="card__button">
+            Add to Cart
+            <div class="card__icons">
+              <img class="card__minus-icon card__icon" src="assets/images/icon-decrement-quantity.svg" alt="minus icon">
+              <span class="card__count">1</span>
+              <img class="card__plus-icon card__icon" src="assets/images/icon-increment-quantity.svg" alt="plus icon">
+            </div>
+          </button>
+          <p class="card__subtitle">Panna Cotta</p>
+          <p class="card__title">Vanilla Panna Cotta</p>
+          <p class="card__price">$6.50</p>
+        </div>
+      </div>
+
+      <aside class="aside">
+        <div class="aside__container">
+          <h2>Your Cart <span id="count">(0)</span></h2>
+          <img src="assets/images/illustration-empty-cart.svg" alt="Empty cart" class="aside__image">
+          <p>Your added items will appear here</p>
+          <ul class="list">
+            <li class="list__item" data-name="Tiramisu" style="display: none">
+              <div class="list__texts">
+                <p class="list__name">Tiramisu</p>
+                <span class="list__quantity">1x</span>
+                <span class="list__price">$5.00</span>
+                <span class="list__total">$5.00</span>
+                <img src="assets/images/icon-remove-item.svg" alt="icon-remove-item" class="list__delete">
+              </div>
+            </li>            
+          </ul>
+          <div class="aside__footer" style="display: none;">
+            <div class="aside__amounts">
+              <span class="aside__total">Order Total</span>
+              <span class="aside__total-amount"><span id="total-amount">0</span></span>
+            </div>
+            <p class="aside__carbon-neutral">This is a <span style="font-weight: 600;">carbon-neutral</span> delivery</p>
+            <button class="aside__confirm aside__confirm-hidden">Confirm Order</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <section class="confirmation confirmation__hidden">
+    <div class="confirmation__overlay"></div>
+    <div class="confirmation__container">
+      <img src="assets/images/icon-order-confirmed.svg" alt="icon-order-confirmed" class="confirmation__icon">
+      <h3 class="confirmation__title">Order Confirmed</h3>
+      <p class="confirmation__text">We hope you enjoy your food!</p>
+      <div class="confirmation__list-wrapper">
+        <ul class="confirmation__list"></ul>
+        <div class="confirmation__summary">
+          <p class="aside__total">Order Total</p>
+          <p class="aside__total-amount"><span id="total-amount">0</span></p>
+        </div>
+      </div>
+      <button class="aside__confirm confirmation__button">Start New Order</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohammad Irfan Noorzada</a>.
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

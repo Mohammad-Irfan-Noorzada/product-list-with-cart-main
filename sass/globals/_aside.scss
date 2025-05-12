@@ -1,0 +1,155 @@
+@use 'function' as c;
+
+.aside {
+    padding: c.rem(25) c.rem(24); 
+    background-color: white;
+    max-width: 100%;
+    width: c.rem(500);
+    margin-top: c.rem(34);
+    margin-inline: auto;
+    border-radius: c.rem(10);
+
+    @include breakpoint("large") {
+        width: c.rem(385);
+        margin-top: c.rem(-80);
+        padding-bottom: c.rem(40);
+    }
+
+    & h2 {
+        font-size: c.rem(25);
+        font-weight: 700;
+        color: $red;
+    }
+
+    &__image {
+        margin: c.rem(40) auto c.rem(20);
+    }
+
+    & p {
+        font-size: c.rem(14);
+        text-align: center;
+        font-weight: 600;
+        color: $rose-500;
+    }
+
+    &__confirm-hidden {
+        display: none;
+    }
+
+    &__amounts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: c.rem(15);
+    }
+
+    &__total {
+        font-size: c.rem(13);
+
+    }
+
+    &__total-amount {
+        font-size: c.rem(25);
+        font-weight: 700;
+    }
+
+    &__carbon-neutral {
+        position: relative;
+        width: c.rem(336);
+        max-width: 100%;
+        margin-inline: auto;
+        margin-block: c.rem(30);
+        padding-block: c.rem(17);
+        background-color: $rose-50;
+        color: $rose-900 !important;
+        font-weight: 400 !important;
+        border-radius: c.rem(6);
+
+        &::before {
+            content: url('../assets/images/icon-carbon-neutral.svg');
+            display: block;
+
+            @include breakpoint("medium") {
+                display: inline;
+                position: absolute;
+                left: 13%;
+            }
+        }
+    }
+
+    &__confirm {
+        max-width: 100%;
+        width: c.rem(336);
+        display: block;
+        padding-block: c.rem(17);
+        margin-inline: auto;
+        background-color: $red;
+        color: $rose-100;
+        font-size: c.rem(16);
+        font-family: $font-family;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        border-radius: c.rem(30);
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            background-color: hsl(14, 84%, 30%);
+        }
+    }
+}
+
+.list {
+
+    & li {
+        border-bottom: c.rem(1) solid $rose-100;
+        margin-block: c.rem(15);
+    }
+
+    &__texts {
+        position: relative;
+        margin-bottom: c.rem(15);
+    }
+        
+    &__name {
+        font-size: c.rem(13);
+        color: $rose-900 !important;
+        text-align: left !important;
+        display: block;
+        margin-bottom: c.rem(8);
+    }
+
+    &__quantity {
+        font-size: c.rem(13);
+        font-weight: 600;
+        color: $red;
+    }
+
+    &__price {
+        font-size: c.rem(14);
+        margin-inline: c.rem(10);
+        color: $rose-400;
+    }
+
+    &__total {
+        font-size: c.rem(14);
+        font-weight: 600;
+        color: $rose-500;
+    }
+
+    &__delete {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: c.rem(3);
+        padding-right: c.rem(3.2);
+        border: c.rem(2) solid $rose-300;
+        cursor: pointer;
+        transition: .3s;
+    
+        &:hover {
+            border: c.rem(2) solid $rose-900;
+        }
+    }
+}

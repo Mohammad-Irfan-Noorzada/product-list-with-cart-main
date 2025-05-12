@@ -1,0 +1,132 @@
+@use 'function' as x;
+
+.main {
+    padding: x.rem(34) x.rem(27) x.rem(24);
+
+    @include breakpoint('medium') {
+        padding: x.rem(55) x.rem(70) x.rem(45);
+    }
+
+    @include breakpoint('large') {
+        padding: x.rem(98) x.rem(112) x.rem(90);
+    }
+
+    &__title {
+        font-size: x.rem(38);
+        margin-bottom: x.rem(26);
+
+        @include breakpoint("large") {
+            margin-bottom: x.rem(32);
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include breakpoint("large") {
+            align-items: start;
+            flex-direction: row;
+            column-gap: x.rem(20);
+        }
+    }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: x.rem(28);
+
+    @include breakpoint('medium') {
+        grid-template-columns: repeat(2, 1fr);
+        gap: x.rem(35) x.rem(24);
+    }
+
+    @include breakpoint('large') {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 100%;
+        width: x.rem(800);
+    }
+
+    &__button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-inline: auto;
+        margin-top: x.rem(-20);
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: x.rem(14);
+        background-color: $white;
+        padding: x.rem(8) x.rem(25);
+        border: x.rem(1) solid $rose-500;
+        outline: none;
+        border-radius: x.rem(25);
+        cursor: pointer;
+        transition: 0.3s;
+      
+        &::before {
+          content: url('../assets/images/icon-add-to-cart.svg');
+          margin-right: x.rem(8);
+        }
+      
+        &:hover {
+          color: $red;
+          border: x.rem(1) solid $red;
+        }
+      
+        &.active {
+          background-color: $red;
+          color: $white;
+      
+          &::before {
+            content: none;
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: x.rem(14);
+        color: $rose-400;
+        margin-top: x.rem(16);
+    }
+
+    &__title {
+        font-size: $font-size;
+        font-weight: 600;
+        margin-block: x.rem(4);
+    }
+
+    &__price {
+        color: $red;
+        font-weight: 600;
+    }
+    
+    &__icons {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        gap: x.rem(31);
+        padding: x.rem(3) x.rem(4);
+    }
+
+    &__plus-icon, &__minus-icon {
+        width: x.rem(16);
+        border: x.rem(1) solid $white;
+        border-radius: 50%;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+
+    &__plus-icon {
+        padding: x.rem(2);
+    }
+
+    &__minus-icon {
+        padding: x.rem(6) x.rem(3);
+    }
+}      
